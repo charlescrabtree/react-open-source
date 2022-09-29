@@ -1,8 +1,9 @@
 import { Table, Column, HeaderCell, Cell } from 'rsuite-table';
 import 'rsuite-table/dist/css/rsuite-table.css';
+import { id, name, email, catchphrase } from '../../mockaroo-data.json';
 
 const dataList = [
-  { id: 1, name: 'a', email: 'a@email.com', avartar: '...' },
+  { id: 1, name: 'Terri-jo Frigout', email: 'tfrigout0@imgur.com', catchphrase: 'maximized leverage' },
   { id: 2, name: 'b', email: 'b@email.com', avartar: '...' },
   { id: 3, name: 'c', email: 'c@email.com', avartar: '...' }
 ];
