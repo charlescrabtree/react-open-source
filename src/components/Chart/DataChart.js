@@ -1,6 +1,6 @@
 import { Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
-import datalist from '../../MOCK_DATA.json';
+
 export const DataChart = () => (
   <Line
     datasetIdKey='id'
@@ -20,4 +20,8 @@ export const DataChart = () => (
       ],
     }}
   />
+  
 );
+// eslint-disable-next-line no-console
+console.log(Chart);
+
