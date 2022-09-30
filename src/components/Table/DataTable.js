@@ -23,10 +23,15 @@ export const DataTable = () => (
     <Column width={100} sortable resizable>
       <HeaderCell>Email</HeaderCell>
       <Cell>
-        {(rowData, rowIndex) => {
+        {(rowData) => {
           return <a href={`mailto:${rowData.email}`}>{rowData.email}</a>;
         }}
       </Cell>
+    </Column>
+
+    <Column width={300} sortable resizable>
+      <HeaderCell>Catchphrase</HeaderCell>
+      <Cell dataKey="catch_phrase" />
     </Column>
   </Table>
 );

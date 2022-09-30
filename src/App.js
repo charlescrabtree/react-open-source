@@ -1,7 +1,7 @@
 import { Link, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { DataTable } from './components/Table/DataTable';
-
+import { DataChart } from './components/Chart/DataChart';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         </Route>
         <Route path="/charts">
           <h1>Chart Library</h1>
+          <DataChart />
         </Route>
       </Switch>
     </div>
