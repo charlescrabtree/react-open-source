@@ -9,29 +9,29 @@ import datalist from '../../MOCK_DATA.json';
 // ];
 
 export const DataTable = () => (
-  <Table data={datalist}>
-    <Column width={100} sortable fixed resizable>
+  <Table data={datalist} className="table">
+    <Column width={100} sortable fixed resizable className="thead">
       <HeaderCell>ID</HeaderCell>
       <Cell dataKey="id" />
     </Column>
 
-    <Column width={100} sortable resizable>
+    <Column width={100} sortable resizable className="tbody">
       <HeaderCell>Name</HeaderCell>
       <Cell dataKey="name" />
     </Column>
 
-    <Column width={100} sortable resizable>
+    <Column width={300} sortable resizable className="tbody">
+      <HeaderCell>Catchphrase</HeaderCell>
+      <Cell dataKey="catch_phrase" />
+    </Column>
+
+    <Column width={100} sortable resizable className="tfoot">
       <HeaderCell>Email</HeaderCell>
       <Cell>
         {(rowData) => {
           return <a href={`mailto:${rowData.email}`}>{rowData.email}</a>;
         }}
       </Cell>
-    </Column>
-
-    <Column width={300} sortable resizable>
-      <HeaderCell>Catchphrase</HeaderCell>
-      <Cell dataKey="catch_phrase" />
     </Column>
   </Table>
 );

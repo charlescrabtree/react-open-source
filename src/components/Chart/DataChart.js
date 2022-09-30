@@ -9,13 +9,13 @@ export const DataChart = () => (
       datasets: [
         {
           id: 1,
-          label: 'name',
-          data: [5, 6, 7],
+          label: 'Jenny;s popularity',
+          data: [1, 5, 7],
         },
         {
           id: 2,
-          label: 'name',
-          data: [3, 2, 1],
+          label: 'Barney;s popularity',
+          data: [6, 2, 1],
         },
       ],
     }}
